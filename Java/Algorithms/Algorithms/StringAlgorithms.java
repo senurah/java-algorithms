@@ -113,6 +113,9 @@ public class StringAlgorithms {
         return stringBuilder.reverse().toString();
     }
 
+    //StringBuilder --> trimToSize() : trimming the spaces and the end
+
+
     
 
 
