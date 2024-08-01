@@ -27,6 +27,8 @@ public class Main {
         System.out.println(linearSearch(arr,53));
         System.out.println(linearSearch2(arr,5));
 
+        linearSearh3(arr,2).ifPresent(System.out::println);
+
 
 
     }
