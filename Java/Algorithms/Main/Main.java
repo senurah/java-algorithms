@@ -1,5 +1,7 @@
 package Java.Algorithms.Main;
 
+import java.util.Arrays;
+
 import static Java.Algorithms.Algorithms.ArrayAlgorithms.*;
 import static Java.Algorithms.Algorithms.StringAlgorithms.*;
 
@@ -27,7 +29,33 @@ public class Main {
         System.out.println(linearSearch(arr,53));
         System.out.println(linearSearch2(arr,5));
 
+        //Optional Int
         linearSearh3(arr,2).ifPresent(System.out::println);
+        //Array should be sorted
+        System.out.println(binarySearch(arr,67));
+        //Built in binary search function
+        Arrays.sort(arr);
+        System.out.println(Arrays.binarySearch(arr,67));
+
+        //Extracting even numbers from 2 arrays
+        int [] arr2 = {-1,0,23,44,-44,65};
+        int [] resultArray = findEvenSum(arr,arr2);
+        for(int num: resultArray){
+            System.out.print(num+" ");
+        }
+        System.out.println();
+        Arrays.stream(findEvenSum(arr,arr2)).forEach(System.out::print);
+        System.out.println();
+        Arrays.stream(findEvenNum2(arr,arr2)).forEach(System.out::print);
+
+        System.out.println("\nReversing Arrays");
+        Arrays.stream(reverseArray(arr)).forEach(System.out::println);
+        System.out.println();
+        reverseArrayInPlace(arr);
+        reverseArrayInPlace(arr);
+        Arrays.stream(arr).forEach(System.out::println);
+
+
 
 
 
