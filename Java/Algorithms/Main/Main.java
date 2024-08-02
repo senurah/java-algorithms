@@ -1,9 +1,11 @@
 package Java.Algorithms.Main;
 
 import java.util.Arrays;
+import java.util.LinkedList;
 
 import static Java.Algorithms.Algorithms.ArrayAlgorithms.*;
 import static Java.Algorithms.Algorithms.StringAlgorithms.*;
+import static Java.Algorithms.Algorithms.LinkedListAlgorithms.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -54,6 +56,10 @@ public class Main {
         reverseArrayInPlace(arr);
         reverseArrayInPlace(arr);
         Arrays.stream(arr).forEach(System.out::println);
+
+        makeGap("Linked List Algorithms");
+        linkedList();
+
 
 
 
