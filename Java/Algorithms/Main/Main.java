@@ -79,6 +79,10 @@ public class Main {
 
         customLikedList.displayContent();
 
+        //Deleting the back half of the linked list
+        customLikedList.deleteBackHalf();
+        customLikedList.displayContent();
+
 
 
 
