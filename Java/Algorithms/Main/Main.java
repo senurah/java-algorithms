@@ -1,5 +1,8 @@
 package Java.Algorithms.Main;
 
+import Java.Algorithms.Algorithms.CustomLinkedList.CustomLinkedList;
+import Java.Algorithms.Algorithms.CustomLinkedList.Node;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 
@@ -59,6 +62,24 @@ public class Main {
 
         makeGap("Linked List Algorithms");
         linkedList();
+
+        makeGap("Creating a Custom Linked List");
+        CustomLinkedList customLikedList = new CustomLinkedList();
+        //Creating the nodes
+        Node firstNode = new Node(1);
+        Node secondNode = new Node(2);
+        Node thirdNode = new Node(3);
+        Node fourthNode = new Node(4);
+
+        //Linking the nodes
+        customLikedList.head = firstNode;
+        firstNode.next = secondNode;
+        secondNode.next = thirdNode;
+        thirdNode.next = fourthNode;
+
+        customLikedList.displayContent();
+
+
 
 
 
