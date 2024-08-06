@@ -47,6 +47,5 @@ public class TreesMain {
         tree2.postOrderTraversal();
 
 
-
     }
 }
