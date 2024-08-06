@@ -25,20 +25,26 @@ public class TreesMain {
         nodefour.data = 4;
         Node nodeNine = new Node();
         nodeNine.data = 9;
+        Node nodeTen = new Node();
+        nodeTen.data = 10;
         Node nodeSeven = new Node();
         nodeSeven.data = 7;
 
         rootNode1.left = nodetwo;
         rootNode1.right = nodefour;
-        rootNode1.right = nodeNine;
-        rootNode1.left = nodeSeven;
+        nodetwo.left = nodeNine;
+        nodetwo.right = nodeTen;
+        nodefour.left = nodeSeven;
 
         BinarySearchTree tree2 = new BinarySearchTree();
         tree2.root = rootNode1;
 
+        makeGap("Pre Order Traversal Algorithm");
+        tree2.preOrderTraversal();
+        makeGap("In Order Traversal Algorithm");
+        tree2.inOrderTraversal();
 
-        tree.preOrderTraversal();
-        System.out.println();
+
 
     }
 }
