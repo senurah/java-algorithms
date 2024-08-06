@@ -1,7 +1,11 @@
 package Java.Algorithms.Algorithms.HashMap;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+
+import static Java.Algorithms.Algorithms.ArrayAlgorithms.makeGap;
 
 public class HashMapMain {
     public static void main(String[] args) {
@@ -41,7 +45,34 @@ public class HashMapMain {
          * HashMap --> Keys are unique
          * HashSet --> Each values are unique
          */
+        makeGap("Find missing Element Algorithm");
+        findMissingElements(new int[] {1,2,3,5}, new int [] {2,4}).forEach(System.out::println);
 
+
+
+    }
+
+    /**
+     * Finding the missing element algorithm
+     * @param first
+     * @param second
+     * @return
+     */
+    public static List<Integer> findMissingElements(int[] first,int[] second){
+        List<Integer> missingElements = new ArrayList<>();
+        HashSet<Integer> hashSet = new HashSet<>();
+
+        for(int x: second){
+            hashSet.add(x);
+        }
+
+        //Checking the missing values
+        for(int y : first){
+            if(!hashSet.contains(y)){
+                missingElements.add(y);
+            }
+        }
+        return missingElements;
     }
 
 
