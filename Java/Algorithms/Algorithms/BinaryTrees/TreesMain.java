@@ -17,5 +17,28 @@ public class TreesMain {
         tree.insert(4);
         tree.insert(3);
 
+        Node rootNode1 = new Node();
+        rootNode1.data = 5;
+        Node nodetwo = new Node();
+        nodetwo.data = 2;
+        Node nodefour = new Node();
+        nodefour.data = 4;
+        Node nodeNine = new Node();
+        nodeNine.data = 9;
+        Node nodeSeven = new Node();
+        nodeSeven.data = 7;
+
+        rootNode1.left = nodetwo;
+        rootNode1.right = nodefour;
+        rootNode1.right = nodeNine;
+        rootNode1.left = nodeSeven;
+
+        BinarySearchTree tree2 = new BinarySearchTree();
+        tree2.root = rootNode1;
+
+
+        tree.preOrderTraversal();
+        System.out.println();
+
     }
 }

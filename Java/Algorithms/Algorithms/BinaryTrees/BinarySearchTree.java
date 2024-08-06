@@ -41,6 +41,22 @@ public class BinarySearchTree {
      * Post-order : Recurse left subtree, recurse right subtree, visit root.--> Explore leaves before roots.
      */
 
+    //Helper function
+    public void preOrderTraversal(){
+        preOrderTraversal(this.root);
+    }
+
+    private void preOrderTraversal(Node root){
+        if(root != null){
+            System.out.print(root.data + " ");
+            //Recusing left tree
+            preOrderTraversal(root.left);
+            //Recusing right tree
+            preOrderTraversal(root.right);
+        }
+
+    }
+
 
 
 
