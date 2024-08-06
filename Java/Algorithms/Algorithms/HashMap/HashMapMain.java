@@ -47,6 +47,9 @@ public class HashMapMain {
          */
         makeGap("Find missing Element Algorithm");
         findMissingElements(new int[] {1,2,3,5}, new int [] {2,4}).forEach(System.out::println);
+        makeGap(" Distribution frequency counter Algorithm");
+        displayFreqOfEachElement(new int [] {1,2,3,1,3,1,3,14,4,24,5,644,54,5,5,5,5,644});
+
 
 
 
@@ -73,6 +76,26 @@ public class HashMapMain {
             }
         }
         return missingElements;
+    }
+
+    /**
+     * Distribution frequency counter
+     */
+    public static void displayFreqOfEachElement(int[] arr){
+        HashMap<Integer,Integer> freqMap = new HashMap<>();
+        for(int x: arr){
+            //If not in the hash map
+            if(!freqMap.containsKey(x)){
+                freqMap.put(x,1);
+            }else{
+                //Adding to the existing value
+                freqMap.put(x,freqMap.get(x)+1);
+            }
+        }
+
+        //Displaying a hashmap using foreach and lambda function
+        freqMap.forEach((key,value) -> System.out.println(key + " : " +value ));
+
     }
 
 
