@@ -76,6 +76,24 @@ public class BinarySearchTree {
 
     }
 
+    //Post Order Traversal --> Change the order of  the print statement
+    //Helper function
+    public void postOrderTraversal(){
+        postOrderTraversal(this.root);
+    }
+
+    private void postOrderTraversal(Node root){
+        if(root != null){
+
+            //Recusing left tree
+            postOrderTraversal(root.left);
+            //Recusing right tree
+            postOrderTraversal(root.right);
+            System.out.print(root.data + " ");
+        }
+
+    }
+
 
 
 

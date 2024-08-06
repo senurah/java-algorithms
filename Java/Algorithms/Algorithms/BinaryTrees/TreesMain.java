@@ -43,6 +43,8 @@ public class TreesMain {
         tree2.preOrderTraversal();
         makeGap("In Order Traversal Algorithm");
         tree2.inOrderTraversal();
+        makeGap("Post Order Traversal Algorithm");
+        tree2.postOrderTraversal();
 
 
 
