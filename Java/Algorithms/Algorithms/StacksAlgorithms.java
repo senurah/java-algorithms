@@ -23,6 +23,10 @@ public class StacksAlgorithms {
         System.out.println("\n Next Greater Element Algorithm \n");
         printNextGreaterElement(new int[] {15,13,7,2,45});
 
+        System.out.println("\n Matching parenthesis Algorthm \n ");
+        System.out.println(hasMatchingParenthesis("(Alorthims (()))"));
+        System.out.println(hasMatchingParenthesis(")) this should be false ()"));
+
     }
 
     /**
@@ -64,6 +68,29 @@ public class StacksAlgorithms {
         while (!stack.empty()){
             System.out.println(stack.pop()+" --> "+-1);
         }
+    }
+
+    /**
+     * Matching parentheses algorithm ()
+     */
+    public static boolean hasMatchingParenthesis(String s){
+        Stack<Character> stack = new Stack<>();
+
+        for(int i =0 ; i<s.length();i++){
+            char current = s.charAt(i);
+            if(current=='('){
+                stack.push(current);
+            } else if (current==')') {
+                if(!stack.empty()){
+                    stack.pop();
+                }else {
+                    return false;
+                }
+            }
+        }
+
+        return stack.empty();
+
     }
 
 
