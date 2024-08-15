@@ -115,13 +115,4 @@ public class StringAlgorithms {
 
     //StringBuilder --> trimToSize() : trimming the spaces and the end
 
-
-    
-
-
-
-
-
-
-
 }
