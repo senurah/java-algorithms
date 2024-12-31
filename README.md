@@ -36,7 +36,7 @@ Welcome to the Java Algorithms repository! This repository contains a comprehens
   - Heap
 
 - **Miscellaneous**
-  - Other algorithms covering various topics are attahched here 
+  - Other algorithms covering various topics. 
 
 ## Purpose
 
