@@ -14,36 +14,18 @@ Welcome to the Java Algorithms repository! This repository contains a comprehens
 - **Searching Algorithms**
   - Binary Search
   - Linear Search
+  - Linear Search using Streams
 
-- **Graph Algorithms**
-  - Depth-First Search (DFS)
-  - Breadth-First Search (BFS)
-  - Dijkstra's Algorithm
-  - Kruskal's Algorithm
-  - Prim's Algorithm
-
-- **Dynamic Programming**
-  - Fibonacci Sequence
-  - Longest Common Subsequence
-  - Knapsack Problem
-  - Coin Change Problem
-
-- **Data Structures**
-  - Linked List
-  - Stack
-  - Queue
-  - Binary Tree
-  - Heap
-
-- **Miscellaneous**
-  - Other algorithms covering various topics. 
+- **Array Algorithms**
+  - Extracting Even Numbers
+  - Reversing an Array
 
 ## Purpose
 
-This repository documents my learning journey in Java algorithms and aims to provide a valuable resource for anyone interested in understanding and implementing these algorithms. Each algorithm includes detailed comments and explanations.
+This repository documents my learning journey in Java algorithms and aims to provide a valuable resource for anyone interested in understanding and implementing these algorithms. Each algorithm includes a clear explanation and Java implementation.
 
 ## Getting Started
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/java-algorithms.git
+   git clone https://github.com/senurah/java-algorithms.git
