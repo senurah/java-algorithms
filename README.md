@@ -10,6 +10,7 @@ Welcome to the Java Algorithms repository! This repository contains a comprehens
   - Bubble Sort
   - Insertion Sort
   - Selection Sort
+  - Selection Sort
 
 - **Searching Algorithms**
   - Binary Search
