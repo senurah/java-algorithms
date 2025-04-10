@@ -32,7 +32,7 @@ public class ArrayAlgorithms {
      * Linear search 3 using Array class to convert int to stream of int
      * No assumptions , Big O notation : O(n)
      */
-    public static OptionalInt linearSearh3(int [] arr, int item){
+    public static OptionalInt linearSearch3(int [] arr, int item){
         //converting to stream and filtering out the data through conditions
          return Arrays.stream(arr).filter(x -> x == item).findFirst();
         //findFirst will return optional therefor we need return the optional int

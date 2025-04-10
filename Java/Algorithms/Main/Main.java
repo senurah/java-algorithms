@@ -4,7 +4,6 @@ import Java.Algorithms.Algorithms.CustomLinkedList.CustomLinkedList;
 import Java.Algorithms.Algorithms.CustomLinkedList.Node;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 
 import static Java.Algorithms.Algorithms.ArrayAlgorithms.*;
 import static Java.Algorithms.Algorithms.StringAlgorithms.*;
@@ -35,7 +34,7 @@ public class Main {
         System.out.println(linearSearch2(arr,5));
 
         //Optional Int
-        linearSearh3(arr,2).ifPresent(System.out::println);
+        linearSearch3(arr,2).ifPresent(System.out::println);
         //Array should be sorted
         System.out.println(binarySearch(arr,67));
         //Built in binary search function
