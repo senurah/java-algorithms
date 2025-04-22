@@ -34,5 +34,14 @@ public class SearchingAlgorithms {
 
     }
 
+    public static boolean LinearSearch3(int[] array,int findMe){
+        for(int i = 0;i< array.length; i++){
+            if(array[i] == findMe){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 }
