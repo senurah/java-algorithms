@@ -10,6 +10,7 @@ public class BubbleSort {
 
     }
 
+    // main bubble sort method
     public static int[] bubbleSort(int[] arr){
         //Starting to compare 2 by two
         System.out.println("Before sorting :");
