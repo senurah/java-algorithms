@@ -48,6 +48,11 @@ public class StringAlgorithms {
 
     //Searching substrings on a strings
     //.contains("String") --> returns boolean on a String
+
+    /**
+     * method to parsing strings
+     * @param s String
+     */
     public static void parseStrings(String s){
         System.out.println("--- Searching on a String ---");
         String st = "Hello";
