@@ -109,6 +109,11 @@ public class StringAlgorithms {
         return reversed.toString();
     }
 
+    /**
+     * Using the StringBuilder class to reverse a string
+     * @param s String
+     * @return String
+     */
     //Using the reverse function in the String builder class
     public static String reverse2(String s){
         if(s==null || s.isEmpty()){
