@@ -91,6 +91,11 @@ public class StringAlgorithms {
         return false;
     }
 
+    /**
+     * Reversing a string
+     * @param s String
+     * @return String
+     */
     //Creating a dynamic string using input data
     public static String reverse(String s){
         if(s==null || s.isEmpty()){
