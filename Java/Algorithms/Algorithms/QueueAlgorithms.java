@@ -27,6 +27,13 @@ public class QueueAlgorithms {
 
     }
 
+    /**
+     * Queue is a linear data structure
+     * FIFO : First In First Out
+     * Enqueue : Adding an element to the queue
+     * Dequeue : Removing an element from the queue
+     * Peek : Checking the top element without removing it
+     */
     //Creating an algorithm to print binary numbers
     public static void printBinary(int n){
         if(n<=0){
